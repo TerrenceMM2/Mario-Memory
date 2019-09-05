@@ -1,18 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class Card extends Component {
+function Card(props) {
 
-    state = {
-
-    };
-
-    render() {
-        return (
-            <h1>Hello world!</h1>
-        );
-    }
-
+    return (
+        <figure className="figure">
+            <img src={props.image} data-id={props.id} alt={props.name} className="figure-img img-fluid rounded" />
+        </figure>
+    );
 }
 
 export default Card;

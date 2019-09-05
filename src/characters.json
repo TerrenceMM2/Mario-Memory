@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1, 
+        "name": "Mario",
+        "image": "https://www.ssbwiki.com/images/thumb/4/44/Mario_SSBU.png/250px-Mario_SSBU.png"
+    },
+    {
+        "id": 2,
+        "name": "Luigi",
+        "image": "https://www.ssbwiki.com/images/thumb/b/bb/Luigi_SSBU.png/250px-Luigi_SSBU.png"
+    },
+    {
+        "id": 3,
+        "name": "Princess Peach",
+        "image": "https://www.ssbwiki.com/images/thumb/7/74/Peach_SSBU.png/250px-Peach_SSBU.png"
+    },
+    {
+        "id": 4,
+        "name": "Bowser",
+        "image": "https://www.ssbwiki.com/images/thumb/4/49/Bowser_SSBU.png/250px-Bowser_SSBU.png"
+    },
+    {
+        "id": 5,
+        "name": "Yoshi",
+        "image": "https://www.ssbwiki.com/images/thumb/8/8d/Yoshi_SSBU.png/250px-Yoshi_SSBU.png"
+    },
+    {
+        "id": 6,
+        "name": "Donkey Kong",
+        "image": "https://www.ssbwiki.com/images/thumb/c/c9/Donkey_Kong_SSBU.png/250px-Donkey_Kong_SSBU.png"
+    },
+    {
+        "id": 7,
+        "name": "Diddy Kong",
+        "image": "https://www.ssbwiki.com/images/thumb/a/a7/Diddy_Kong_SSBU.png/250px-Diddy_Kong_SSBU.png"
+    },
+    {
+        "id": 8,
+        "name": "Link",
+        "image": "https://www.ssbwiki.com/images/thumb/8/84/Link_SSBU.png/250px-Link_SSBU.png"
+    },
+    {
+        "id": 9,
+        "name": "Princess Zelda",
+        "image": "https://www.ssbwiki.com/images/thumb/c/c8/Zelda_SSBU.png/250px-Zelda_SSBU.png"
+    },
+    {
+        "id": 10,
+        "name": "Ganon",
+        "image": "https://www.ssbwiki.com/images/thumb/9/91/Ganondorf_SSBU.png/250px-Ganondorf_SSBU.png"
+    },
+    {
+        "id": 11,
+        "name": "Fox",
+        "image": "https://www.ssbwiki.com/images/thumb/2/2f/Fox_SSBU.png/250px-Fox_SSBU.png"
+    },
+    {
+        "id": 12,
+        "name": "Falco",
+        "image": "https://www.ssbwiki.com/images/thumb/8/80/Falco_SSBU.png/250px-Falco_SSBU.png"
+    },
+    {
+        "id": 13,
+        "name": "Wolf",
+        "image": "https://www.ssbwiki.com/images/thumb/8/8a/Wolf_SSBU.png/250px-Wolf_SSBU.png"
+    },
+    {
+        "id": 14,
+        "name": "Samus",
+        "image": "https://www.ssbwiki.com/images/thumb/0/03/Samus_SSBU.png/250px-Samus_SSBU.png"
+    },
+    {
+        "id": 15,
+        "name": "Kirby",
+        "image": "https://www.ssbwiki.com/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
+    },
+    {
+        "id": 16,
+        "name": "Pikachu",
+        "image": "https://www.ssbwiki.com/images/thumb/9/93/Pikachu_SSBU.png/250px-Pikachu_SSBU.png"
+    }
+]
