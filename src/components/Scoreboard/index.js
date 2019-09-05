@@ -1,18 +1,31 @@
-import React from "react";
+import React, { Component } from "react";
 
 const styles = {
-    
+    scoreBoard : {
+        display: "inline",
+        position: "absolute",
+        top: 0,
+        right: 0,
+        marginTop: "6.5rem",
+        marginRight: "3rem",
+        padding: "2rem",
+        fontSize: "1.5rem",
+        fontWeight: 100,
+    }
 }
 
-function Scoreboard() {
-    return (
-        <div style={styles.jumbotron} className="jumbotron jumbotron-fluid">
-            <div className="container">
-                <h1 className="display-4">Mario Memory</h1>
-                <p className="lead">Click the images to earn a point. Do not click an image twice.</p>
-            </div>
-        </div>
-    );
+class Scoreboard extends Component {
+
+    state = {
+        currentScore: 0,
+        highScore: 0
+    }
+    
+    render() {
+        return (
+            <div style={styles.scoreBoard}>Current Score: {this.state.currentScore} | High Score: {this.state.highScore}</div>
+        );
+    }
 };
 
 export default Scoreboard;
