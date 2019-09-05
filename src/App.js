@@ -9,6 +9,10 @@ class App extends Component {
   state = {
     characters
   };
+
+  handlerCharacterClick = event => {
+    console.log("character clicked!", event)
+  }
   
   render() {
     return (
@@ -16,7 +20,7 @@ class App extends Component {
       <Header />
         <Wrapper>
           <div>
-            {this.state.characters.map(character => (<Card name={character.name} data-id={character.id} image={character.image}/>))}
+            {this.state.characters.map(character => (<Card key={character.id} click={this.handlerCharacterClick} name={character.name} data-id={character.id} image={character.image}/>))}
           </div>
         </Wrapper>
       </div>
