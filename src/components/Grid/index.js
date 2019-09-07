@@ -4,8 +4,8 @@ import Card from "../Card";
 const styles = {
     cardContainer : {
         display : "grid",
-        gridTemplateColumns: "25% 25% 25% 25%",
-        gridTemplateRows: "25% 25% 25% 25%"
+        gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+        gridTemplateRows: "1fr 1fr 1fr"
     }
 }
 

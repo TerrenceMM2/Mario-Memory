@@ -3,11 +3,13 @@ import Scoreboard from "../../components/Scoreboard";
 
 const styles = {
     jumbotron : {
-        margin: 0
+        margin : 0,
+        borderRadius : 0,
+        padding : "1rem 0"
     },
     lead : {
-        display: "inline-block",
-        margin: 0
+        display : "inline-block",
+        margin : 0
     }
 }
 

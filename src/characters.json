@@ -61,21 +61,16 @@
     },
     {
         "id": 13,
-        "name": "Wolf",
-        "image": "https://www.ssbwiki.com/images/thumb/8/8a/Wolf_SSBU.png/250px-Wolf_SSBU.png"
-    },
-    {
-        "id": 14,
         "name": "Samus",
         "image": "https://www.ssbwiki.com/images/thumb/0/03/Samus_SSBU.png/250px-Samus_SSBU.png"
     },
     {
-        "id": 15,
+        "id": 14,
         "name": "Kirby",
         "image": "https://www.ssbwiki.com/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png"
     },
     {
-        "id": 16,
+        "id": 15,
         "name": "Pikachu",
         "image": "https://www.ssbwiki.com/images/thumb/9/93/Pikachu_SSBU.png/250px-Pikachu_SSBU.png"
     }
