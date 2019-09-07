@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./components/Card";
+import Grid from "./components/Grid";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import characters from "./characters.json";
@@ -7,21 +7,33 @@ import characters from "./characters.json";
 class App extends Component {
   
   state = {
-    characters
+    characters,
+    score: 0,
+    highScore: 0
   };
 
-  handlerCharacterClick = event => {
-    console.log("character clicked!", event)
+  handlerIncrementScore = () => {
+    let score = this.state.score + 1;
+    this.setState({
+      score: score
+    });
+    this.handlerCardShuffle(characters);
+  };
+
+  handlerCardShuffle = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
   }
   
   render() {
     return (
       <div>
-      <Header />
+      <Header score={this.state.score} highScore={this.state.highScore}/>
         <Wrapper>
-          <div>
-            {this.state.characters.map(character => (<Card key={character.id} click={this.handlerCharacterClick} name={character.name} data-id={character.id} image={character.image}/>))}
-          </div>
+          <Grid handlerIncrementScore={this.handlerIncrementScore} characters={this.state.characters} />
         </Wrapper>
       </div>
     );
