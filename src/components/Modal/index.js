@@ -2,24 +2,29 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
+const styles = {
+    gif : {
+        display: "block",
+        margin: "0 auto",
+        maxWidth: "300px"
+    }
+}
+
 export default function GameModal(props) {
     if (props.showModal) {
         return (
-            <Modal
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
+            <Modal aria-labelledby="contained-modal-title-vcenter" show={props.showModal} centered
             >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                Modal heading
+                {props.modalTitle}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {props.modalGif}
+                <img style={styles.gif} src={props.modalGif} alt="gif" />
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={props.onHide}>Close</Button>
+                <Button onClick={props.hideModal}>Close</Button>
             </Modal.Footer>
             </Modal>
         )

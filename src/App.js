@@ -18,10 +18,10 @@ class App extends Component {
     showModal: false
   };
 
-  handlerIncrementScore = (event) => {
+  handlerCardClick = (event) => {
     let id = event.target.id
     this.handlerCardShuffle(characters);
-    this.handlerCharactersClicked(this.state.charactersClicked, id)
+    this.handlerGameCalculation(this.state.charactersClicked, id)
   };
 
   handlerCardShuffle = (arr) => {
@@ -32,16 +32,11 @@ class App extends Component {
     return arr;
   }
 
-  handlerCloseModal(){
-    this.setState({ showModal: false });
+  handlerHideModal = () => {
+    this.setState({ showModal: false })
   }
 
-  handlerOpenModal(){
-    this.setState({ showModal: true });
-  }
-
-  handlerCharactersClicked = (arr, id) => {
-    this.handlerCloseModal();
+  handlerGameCalculation = (arr, id) => {
 
     if (arr.includes(id)) {
       let gif = gifs[1].loss[Math.floor(Math.random()*gifs.length)];
@@ -49,9 +44,9 @@ class App extends Component {
         score: 0,
         charactersClicked: [],
         modalGif: gif,
-        modalTitle: "Game Over!"
+        modalTitle: "Game Over!",
+        showModal: true
       });
-      this.handlerOpenModal();
       if (this.state.highScore < this.state.score) {
         this.setState({
           highScore: this.state.score
@@ -69,9 +64,9 @@ class App extends Component {
           score: 0,
           charactersClicked: [],
           modalGif: gif,
-          modalTitle: "You Win!"
+          modalTitle: "You Win!",
+          showModal: true
         });
-        this.handlerOpenModal();
       }
     }
     
@@ -85,9 +80,9 @@ class App extends Component {
       <div>
       <Header score={this.state.score} highScore={this.state.highScore}/>
         <Wrapper>
-          <Grid handlerCharactersClicked={this.handlerCharactersClicked} handlerIncrementScore={this.handlerIncrementScore} characters={this.state.characters} />
+          <Grid handlerGameCalculation={this.handlerGameCalculation} handlerCardClick={this.handlerCardClick} characters={this.state.characters} />
         </Wrapper>
-        <GameModal close={this.handlerCloseModal} onHide={this.close} modalTitle={this.state.modalTitle} modalGif={this.state.modalGif} showModal={this.state.showModal} />
+        <GameModal close={this.handlerCloseModal} onHide={this.close} modalTitle={this.state.modalTitle} modalGif={this.state.modalGif} showModal={this.state.showModal} hideModal={this.handlerHideModal}/>
       </div>
     );
   }
