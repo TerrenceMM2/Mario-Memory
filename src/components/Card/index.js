@@ -5,7 +5,7 @@ function Card(props) {
 
     return (
         <figure className="figure hvr-grow-shadow">
-            <img onClick={props.handlerIncrementScore} src={props.image} data-id={props.id} alt={props.name} className="figure-img img-fluid rounded" />
+            <img onClick={props.handlerIncrementScore} src={props.image} id={props.id} alt={props.name} className="figure-img img-fluid rounded" />
         </figure>
     );
 }

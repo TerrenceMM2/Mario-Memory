@@ -10,14 +10,20 @@ const styles = {
     lead : {
         display : "inline-block",
         margin : 0
+    },
+    title : {
+        fontFamily : "Super Mario"
+    },
+    container : {
+        padding: 0
     }
 }
 
 function Header(props) {
     return (
         <div style={styles.jumbotron} className="jumbotron jumbotron-fluid">
-            <div className="container">
-                <h1 className="display-4">Mario Memory</h1>
+            <div style={styles.container} className="container">
+                <h1 style={styles.title} className="display-4">Mario Memory</h1>
                 <p style={styles.lead} className="lead">Click the images to earn a point. Do not click an image twice.</p>
                 <Scoreboard score={props.score} highScore={props.highScore}/>
             </div>

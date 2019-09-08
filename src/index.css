@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Super Mario';
+    src: url('./fonts/SuperMarioGalaxy.woff2') format('woff2'),
+        url('./fonts/SuperMarioGalaxy.woff') format('woff'),
+        url('./fonts/SuperMarioGalaxy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 #root {
     height: 100vh;
     background-color: #e9ecef;
