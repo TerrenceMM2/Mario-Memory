@@ -39,7 +39,8 @@ class App extends Component {
   handlerGameCalculation = (arr, id) => {
 
     if (arr.includes(id)) {
-      let gif = gifs[1].loss[Math.floor(Math.random()*gifs.length)];
+      console.log(Math.floor(Math.random() * gifs.length))
+      let gif = gifs[1].loss[Math.floor(Math.random() * 5)];
       this.setState({
         score: 0,
         charactersClicked: [],
@@ -58,7 +59,7 @@ class App extends Component {
         score: score
       });
       if (score === 15) {
-        let gif = gifs[0].win[Math.floor(Math.random()*gifs.length)];
+        let gif = gifs[0].win[Math.floor(Math.random() * 5)];
         this.setState({
           highScore: 15,
           score: 0,

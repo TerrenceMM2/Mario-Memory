@@ -11,7 +11,6 @@ const styles = {
 }
 
 export default function GameModal(props) {
-    if (props.showModal) {
         return (
             <Modal aria-labelledby="contained-modal-title-vcenter" show={props.showModal} centered
             >
@@ -27,9 +26,6 @@ export default function GameModal(props) {
                 <Button onClick={props.hideModal}>Close</Button>
             </Modal.Footer>
             </Modal>
-        )
-    } else {
-        return null
-    }
+    )
 
 }

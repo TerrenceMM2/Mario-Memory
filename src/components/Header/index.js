@@ -24,7 +24,7 @@ function Header(props) {
         <div style={styles.jumbotron} className="jumbotron jumbotron-fluid">
             <div style={styles.container} className="container">
                 <h1 style={styles.title} className="display-4">Mario Memory</h1>
-                <p style={styles.lead} className="lead">Click the images to earn a point. Do not click an image twice.</p>
+                <p style={styles.lead} className="lead">Click an image to earn a point. Do not click an image twice.</p>
                 <Scoreboard score={props.score} highScore={props.highScore}/>
             </div>
         </div>
