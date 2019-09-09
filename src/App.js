@@ -3,6 +3,7 @@ import Grid from "./components/Grid";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import GameModal from "./components/Modal";
+import MusicBed from "./components/MusicBed";
 import characters from "./characters.json";
 import gifs from "./gifs.json";
 
@@ -15,13 +16,13 @@ class App extends Component {
     charactersClicked: [],
     modalTitle: "",
     modalGif: "",
-    showModal: false
+    showModal: false,
   };
 
   handlerCardClick = (event) => {
-    let id = event.target.id
+    let id = event.target.id;
     this.handlerCardShuffle(characters);
-    this.handlerGameCalculation(this.state.charactersClicked, id)
+    this.handlerGameCalculation(this.state.charactersClicked, id);
   };
 
   handlerCardShuffle = (arr) => {
@@ -39,7 +40,6 @@ class App extends Component {
   handlerGameCalculation = (arr, id) => {
 
     if (arr.includes(id)) {
-      console.log(Math.floor(Math.random() * gifs.length))
       let gif = gifs[1].loss[Math.floor(Math.random() * 5)];
       this.setState({
         score: 0,
@@ -79,11 +79,12 @@ class App extends Component {
 
     return (
       <div>
-      <Header score={this.state.score} highScore={this.state.highScore}/>
+      <Header score={this.state.score} highScore={this.state.highScore} />
         <Wrapper>
           <Grid handlerGameCalculation={this.handlerGameCalculation} handlerCardClick={this.handlerCardClick} characters={this.state.characters} />
         </Wrapper>
-        <GameModal close={this.handlerCloseModal} onHide={this.close} modalTitle={this.state.modalTitle} modalGif={this.state.modalGif} showModal={this.state.showModal} hideModal={this.handlerHideModal}/>
+        <GameModal close={this.handlerCloseModal} onHide={this.close} modalTitle={this.state.modalTitle} modalGif={this.state.modalGif} showModal={this.state.showModal} hideModal={this.handlerHideModal} />
+        <MusicBed />
       </div>
     );
   }

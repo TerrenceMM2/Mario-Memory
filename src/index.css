@@ -7,7 +7,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Super Mario 3';
+    src: url('./fonts/smb3.woff2') format('woff2'),
+        url('./fonts/smb3.woff') format('woff'),
+        url('./fonts/smb3.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 #root {
     height: 100vh;
-    background-color: #e9ecef;
+    background-image: url('background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Super Mario 3", 'Courier New', Courier, monospace;
+    letter-spacing: -2px;
 }
