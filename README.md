@@ -18,6 +18,11 @@ Mario Memory is a fun, memory game involving your favorite Nintendo characters.
 
 - - - 
 
+## Screenshot
+![Mario Memory Game Screenshot](../media/mario-memory-screenshot.png?raw=true)
+
+- - - 
+
 ### Contribute  
 
 To get started ...
