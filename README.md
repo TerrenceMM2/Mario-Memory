@@ -1,5 +1,4 @@
-# coursework15-memory-game
-Vanderbilt Coding Boot Camp - Coursework 15 - React Memory Game  
+# Mario Memory
 Live Link: https://terrencemm2.github.io/coursework15-memory-game/
 
 - - -
