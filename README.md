@@ -1,5 +1,5 @@
 # Mario Memory
-Live Link: https://terrencemm2.github.io/coursework15-memory-game/
+Live Link: https://terrencemm2.github.io/Mario-Memory/
 
 - - -
 
