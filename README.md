@@ -10,7 +10,7 @@ Mario Memory is a fun, memory game involving your favorite Nintendo characters.
 
 ## Instructions  
 
-1. Navigate to [Mario Memory](https://terrencemm2.github.io/coursework15-memory-game/).  
+1. Navigate to [Mario Memory](https://terrencemm2.github.io/Mario-Memory/).  
 2. Choose a character card to begin.
 3. Choose a different character each time without selecting the same character twice.
 4. Click each character once (a total of 15) to win the game.
