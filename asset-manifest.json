@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Mario-Memory/static/css/main.676e558c.chunk.css",
+    "main.js": "/Mario-Memory/static/js/main.c8e6d460.chunk.js",
+    "main.js.map": "/Mario-Memory/static/js/main.c8e6d460.chunk.js.map",
+    "runtime~main.js": "/Mario-Memory/static/js/runtime~main.1575c485.js",
+    "runtime~main.js.map": "/Mario-Memory/static/js/runtime~main.1575c485.js.map",
+    "static/js/2.e79872b9.chunk.js": "/Mario-Memory/static/js/2.e79872b9.chunk.js",
+    "static/js/2.e79872b9.chunk.js.map": "/Mario-Memory/static/js/2.e79872b9.chunk.js.map",
+    "index.html": "/Mario-Memory/index.html",
+    "precache-manifest.e98fdf1ee6dc1f6af5711ce503acff1e.js": "/Mario-Memory/precache-manifest.e98fdf1ee6dc1f6af5711ce503acff1e.js",
+    "service-worker.js": "/Mario-Memory/service-worker.js",
+    "static/css/main.676e558c.chunk.css.map": "/Mario-Memory/static/css/main.676e558c.chunk.css.map",
+    "static/media/index.css": "/Mario-Memory/static/media/smb3.d816cebf.woff2"
+  }
+}
